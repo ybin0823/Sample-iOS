@@ -10,10 +10,11 @@
 		4E7121FE1BA11A5800A0A351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7121FD1BA11A5800A0A351 /* main.m */; };
 		4E7122011BA11A5800A0A351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122001BA11A5800A0A351 /* AppDelegate.m */; };
 		4E7122041BA11A5800A0A351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122031BA11A5800A0A351 /* ViewController.m */; };
-		4E7122071BA11A5800A0A351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7122051BA11A5800A0A351 /* Main.storyboard */; };
 		4E7122091BA11A5800A0A351 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7122081BA11A5800A0A351 /* Images.xcassets */; };
 		4E71220C1BA11A5800A0A351 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E71220A1BA11A5800A0A351 /* LaunchScreen.xib */; };
 		4E7122181BA11A5800A0A351 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122171BA11A5800A0A351 /* SampleTests.m */; };
+		4EF67F931BAA554200657855 /* Accumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF67F921BAA554200657855 /* Accumulator.m */; };
+		4EF67F961BAA5F4000657855 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF67F951BAA5F4000657855 /* ACViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,15 @@
 		4E7122001BA11A5800A0A351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4E7122021BA11A5800A0A351 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E7122031BA11A5800A0A351 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4E7122061BA11A5800A0A351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E7122081BA11A5800A0A351 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4E71220B1BA11A5800A0A351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4E7122111BA11A5800A0A351 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7122161BA11A5800A0A351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7122171BA11A5800A0A351 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
+		4EF67F911BAA554200657855 /* Accumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accumulator.h; sourceTree = "<group>"; };
+		4EF67F921BAA554200657855 /* Accumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accumulator.m; sourceTree = "<group>"; };
+		4EF67F941BAA5F4000657855 /* ACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewController.h; sourceTree = "<group>"; };
+		4EF67F951BAA5F4000657855 /* ACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +89,13 @@
 				4E7122001BA11A5800A0A351 /* AppDelegate.m */,
 				4E7122021BA11A5800A0A351 /* ViewController.h */,
 				4E7122031BA11A5800A0A351 /* ViewController.m */,
-				4E7122051BA11A5800A0A351 /* Main.storyboard */,
 				4E7122081BA11A5800A0A351 /* Images.xcassets */,
 				4E71220A1BA11A5800A0A351 /* LaunchScreen.xib */,
 				4E7121FB1BA11A5800A0A351 /* Supporting Files */,
+				4EF67F911BAA554200657855 /* Accumulator.h */,
+				4EF67F921BAA554200657855 /* Accumulator.m */,
+				4EF67F941BAA5F4000657855 /* ACViewController.h */,
+				4EF67F951BAA5F4000657855 /* ACViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -199,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7122071BA11A5800A0A351 /* Main.storyboard in Resources */,
 				4E71220C1BA11A5800A0A351 /* LaunchScreen.xib in Resources */,
 				4E7122091BA11A5800A0A351 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF67F931BAA554200657855 /* Accumulator.m in Sources */,
 				4E7122041BA11A5800A0A351 /* ViewController.m in Sources */,
 				4E7122011BA11A5800A0A351 /* AppDelegate.m in Sources */,
 				4E7121FE1BA11A5800A0A351 /* main.m in Sources */,
+				4EF67F961BAA5F4000657855 /* ACViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4E7122051BA11A5800A0A351 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E7122061BA11A5800A0A351 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E71220A1BA11A5800A0A351 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +418,7 @@
 				4E71221D1BA11A5800A0A351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E71221E1BA11A5800A0A351 /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +427,7 @@
 				4E7122201BA11A5800A0A351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
